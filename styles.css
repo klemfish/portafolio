@@ -1,0 +1,93 @@
+#footer {
+    position: relative;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+   background-color: black;
+   color: white;
+   text-align: center;
+    align-content: center;
+    width: 100%;
+}
+
+#social{
+    filter: invert();
+    height: 23px;
+    padding-right: 10px;
+    
+}
+
+#social2{
+    filter: invert();
+    height: 28px;
+    padding-left: 10px;
+}
+
+#worksection{
+    background-color: #1F1F1F;
+}
+.header{
+    height: 30vh;
+    font-size: 30vh;
+    padding-top: 12vh;
+    padding-left: 12.5vh;
+    color: #FF0033;
+}
+
+#wsection{
+    font-size: 10vh;
+    font-family: 'quicksand',sans-serif;
+}
+
+.works{
+    font-size: 16px;
+    width: 100vw;
+}
+
+.workimg{
+    height: 18.75em;
+    width: 18.75em;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.figure-caption{
+    padding-top: 15px;
+    padding-bottom: 30px;
+    color: white;
+}
+
+.col-12{
+   text-align: center;
+}
+
+.botones{
+    height: 30vh;
+    align-content: center;
+    justify-content: space-around;
+    padding-top: 10vh;
+    padding-bottom: 20vh;
+    padding-left:10vh;
+    padding-right: 10vh;
+}
+.btn-primary{
+    align-content: center;
+    font-size: 3vh;
+    padding: 30px;
+    width: 300px;
+    height: 12vh;
+    background-image: url(images/mitskibt.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.btn-secondary{
+    align-content: center;
+    font-size: 3vh;
+    padding: 30px;
+    width: 300px;
+    height: 12vh;
+    background-image: url(images/megbt.jpg);
+    background-size: cover;
+    background-position: center;
+}
