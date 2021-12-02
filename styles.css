@@ -26,7 +26,7 @@
 
 /*----------------------index------------------------*/
 
-.index{padding-top:90px;}@media (min-width:768px){.index{padding-top:0;}}@media (min-width:768px){.index{margin-right:232px;}}
+#index{padding-top:40px;}@media (min-width:768px){#index{padding-top:0;}}@media (min-width:768px){#index{margin-right:232px;}}
 
 #indexim{
     height: 24vh;
@@ -102,27 +102,34 @@
   }
 }
 
-.card{
-    height: 100vh;
-    display: inline-flex;
-    width: 100%;
-}
+@media (max-width: 768px) {#c1{height: 20px;} #c2{height: 50vh;}}
 
-#card1{
-    background-color: cornflowerblue;
-    font-size: 5vh;
+.parent{
+    display: grid;
+    grid-template-columns: 50% auto;
+    margin: 0;
+    padding: 0;
+}
+.left-panel{
+    background-color: #b59bc7;
     font-family: 'qaligo',sans-serif;
-    text-align: left;
-    word-wrap: break-word;
+    height: 100vh;
+    padding: 0 10px 0 2px;
+    
 }
-
-#card2{
+.right-panel{
     background-color: #1F1F1F;
+    color: white;
 }
 
-#c1{
+#title{
+    text-align: left;
+    padding-top: 55%;
+    padding-left: 10%;
+    font-size: 3em;
+    line-height:1.9em;
+    white-space: normal;
 }
-#c2{background-color: #1F1F1F;}
 /*----------------------works------------------------*/
 #worksection{
     background-color: #1F1F1F;
