@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         
         <link rel="stylesheet" href="styles.css">
+        <script src="docs.js"></script>
 
         <title>Portafolio</title>
         
@@ -14,6 +15,24 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
     </head>
+    
+    <section class="p-menu1">
+  <nav id="navbar" class="navigation" role="navigation">
+    <input id="toggle1" type="checkbox" />
+    <label class="hamburger1" for="toggle1">
+      <div class="top"></div>
+      <div class="meat"></div>
+      <div class="bottom"></div>
+    </label>
+  
+    <nav class="menu1">
+      <a class="link1" href="" id="l1"><img src="images/works.svg" height="150px">HOME</a>
+      <a class="link1" href="" id="l2"><img src="images/works.svg" height="150px">WORKS</a>
+      <a class="link1" href="" id="l3"><img src="images/about.svg" height="150px">ABOUT</a>
+      <a class="link1" href="" id="l4"><img src="images/contact.svg" height="150px">CONTACT</a>
+    </nav>
+</nav>
+</section>
     
     <body id="worksection">
         <div class="header">
@@ -24,26 +43,26 @@
         <div class="row">
             <div class="col-12 col-md-6 col-sm-12 col-lg-3">
                         <figure class="figure">
-                            <img src="images/2w%20img%201.png" class = "img-responsive" width = "100%" alt="A generic square placeholder image with rounded corners in a figure."><figcaption class="figure-caption">Article on Alice in Wonderland Syndrome</figcaption>
+                            <img src="images/2w%20img%201.png" class = "img-responsive" alt="medart" onclick="openModal();currentSlide(1)" class="hover-shadow"><figcaption class="figure-caption">Article on Alice in Wonderland Syndrome</figcaption>
                             </figure>        
                 
                     </div>
             
             <div class="col-12 col-md-6 col-sm-12 col-lg-3">
                         <figure class="figure">
-                        <img src="images/2w%20img%202.png" class = "img-responsive" width = "100%"  alt="A generic square placeholder image with rounded corners in a figure."><figcaption class="figure-caption">"Interview with the Vampire" Book cover</figcaption>
+                        <img src="images/2w%20img%202.png" class = "img-responsive" alt="bookcov" onclick="openModal();currentSlide(2)" class="hover-shadow"><figcaption class="figure-caption">"Interview with the Vampire" Book cover</figcaption>
                             </figure>
             </div>
             
             <div class="col-12 col-md-6 col-sm-12 col-lg-3">
                         <figure class="figure">
-                        <img src="images/Convocatoria_Mesa%20de%20trabajo%201.png" class = "img-responsive" width = "100%"  alt="A generic square placeholder image with rounded corners in a figure."><figcaption class="figure-caption">Master's call design</figcaption>
+                        <img src="images/Convocatoria_Mesa%20de%20trabajo%201.png" class = "img-responsive"  alt="masterdes" onclick="openModal();currentSlide(3)" class="hover-shadow"><figcaption class="figure-caption">Master's call design</figcaption>
                             </figure>
             </div>
             
             <div class="col-12 col-md-6 col-sm-12 col-lg-3">
                         <figure class="figure">
-                        <img src="images/2w%20img%204.png" class = "img-responsive" width = "100%"  alt="A generic square placeholder image with rounded corners in a figure."><figcaption class="figure-caption">"Thundershirt" Infography</figcaption>
+                        <img src="images/2w%20img%204.png" class = "img-responsive" alt="infog" onclick="openModal();currentSlide(4)" class="hover-shadow"><figcaption class="figure-caption">"Thundershirt" Infography</figcaption>
                             </figure>           
             </div>
             </div>
@@ -51,27 +70,121 @@
          <div class="row">
             <div class="col-12 col-md-6 col-sm-12 col-lg-3">
                         <figure class="figure">
-                        <img src="images/Arch%20Motorcycles-02.png" class = "img-responsive" width = "100%"  alt="A generic square placeholder image with rounded corners in a figure."><figcaption class="figure-caption">Arch Motorcycles brochure</figcaption>
+                        <img src="images/Arch%20Motorcycles-02.png" class = "img-responsive" alt="brochure" onclick="openModal();currentSlide(5)" class="hover-shadow"><figcaption class="figure-caption">Arch Motorcycles brochure</figcaption>
                             </figure>
              </div>
              
             <div class="col-12 col-md-6 col-sm-12 col-lg-3">
                         <figure class="figure">
-                        <img src="images/2w%20img%203.png" class = "img-responsive" width = "100%"  alt="A generic square placeholder image with rounded corners in a figure."><figcaption class="figure-caption">"Educación en México" Infography</figcaption>
+                        <img src="images/2w%20img%203.png" class = "img-responsive" alt="infog2" onclick="openModal();currentSlide(6)" class="hover-shadow"><figcaption class="figure-caption">"Educación en México" Infography</figcaption>
                             </figure>
              </div>
              
             <div class="col-12 col-md-6 col-sm-12 col-lg-3">
                         <figure class="figure">
-                        <img src="images/Kristen%20Stewart_Mesa%20de%20trabajo%201.png" class = "img-responsive" width = "100%"  alt="A generic square placeholder image with rounded corners in a figure."><figcaption class="figure-caption">Kristen Stewart magazine article design</figcaption>
+                        <img src="images/Kristen%20Stewart_Mesa%20de%20trabajo%201.png" class = "img-responsive" alt="article" onclick="openModal();currentSlide(7)" class="hover-shadow"><figcaption class="figure-caption">Kristen Stewart magazine article design</figcaption>
                             </figure>
              </div>
              
             <div class="col-12 col-md-6 col-sm-12 col-lg-3">
                         <figure class="figure">
-                        <img src="images/Parasite-01.png" class = "img-responsive" width = "100%"  alt="A generic square placeholder image with rounded corners in a figure."><figcaption class="figure-caption">Magazine article</figcaption>
+                        <img src="images/Parasite-01.png" class = "img-responsive" alt="magart" onclick="openModal();currentSlide(8)" class="hover-shadow"><figcaption class="figure-caption">Magazine article</figcaption>
                             </figure>
             </div></div>
+        
+        <!-- Lightbox -->
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 8</div>
+        <div id="modalimage">
+      <img src="images/2w%20img%201.png" style="width: 100%">
+            <div class="caption-container">
+      <p id="caption">Article on Alice in Wonderland Syndrome</p>
+    </div>
+            </div>
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 8</div>
+        <div id="modalimage">
+      <img src="images/2w%20img%202.png" style="width: 50%">
+            <div class="caption-container">
+      <p id="caption">"Interview with the Vampire" Book cover</p>
+    </div>
+        </div>
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 8</div>
+        <div id="modalimage">
+      <img src="images/Convocatoria_Mesa%20de%20trabajo%201.png" style="width: 100%" >
+            <div class="caption-container">
+      <p id="caption">Master's call design</p>
+    </div>
+        </div>
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">4 / 8</div>
+        <div id="modalimage">
+      <img src="images/2w%20img%204.png" style="width: 100%" >
+            <div class="caption-container">
+      <p id="caption">"Thundershirt" Infography</p>
+    </div>
+            
+        </div>
+    </div>
+      <div class="mySlides">
+      <div class="numbertext">5 / 8</div>
+          <div id="modalimage">
+      <img src="images/Arch%20Motorcycles-02.png" style="width: 100%" >
+              <div class="caption-container">
+      <p id="caption">Arch Motorcycles brochure</p>
+    </div>
+          </div>
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">6 / 8</div>
+        <div id="modalimage">
+      <img src="images/2w%20img%203.png" style="width: 50%" >
+            <div class="caption-container">
+      <p id="caption">"Educación en México" Infography</p>
+    </div>
+        </div>
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">7 / 8</div>
+        <div id="modalimage">
+      <img src="images/Kristen%20Stewart_Mesa%20de%20trabajo%201.png" style="width: 100%" >
+            <div class="caption-container">
+      <p id="caption">Kristen Stewart magazine article design</p>
+    </div>
+        </div>
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">8 / 8</div>
+        <div id="modalimage">
+      <img src="images/Parasite-01.png" style="width: 50%" >
+            <div class="caption-container">
+      <p id="caption">Magazine article</p>
+    </div>
+        </div>
+    </div>
+
+    <!-- Next/previous controls -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    </div>
+        </div>
+        <!-- Lightbox -->
+        
         
        <div class="row botones">
            <div class="col-12 col-md-6 col-sm-12 col-lg-6">
