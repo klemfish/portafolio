@@ -24,6 +24,121 @@
     padding-left: 10px;
 }
 
+/*----------------------nav-----------------------*/
+/* General */
+/* html {
+  overflow: hidden;
+  -webkit-overflow-scrolling: touch;
+  height: 100%;
+} */
+
+/* body {
+  margin: 20px 0;
+  overflow: auto;
+ 
+  color: #fff;
+} */
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.p-menu1{
+   height: 100%;
+}
+
+
+
+
+/* Hamburger */
+.hamburger1 {
+  height: 45px;
+  margin: 10px;
+  display: -ms-grid;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  justify-items: right;
+  z-index: 120;
+}
+
+.hamburger1 div {
+  background-color: rgb(61, 61, 61);
+  position: relative;
+  width: 40px;
+  height: 5px;
+  margin-top: 7px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+#toggle1 {
+  display: none;
+}
+
+#toggle1:checked + .hamburger1 .top {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  margin-top: 22.5px;
+}
+
+#toggle1:checked + .hamburger1 .meat {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  margin-top: -5px;
+}
+
+#toggle1:checked + .hamburger1 .bottom {
+  -webkit-transform: scale(0);
+          transform: scale(0);
+}
+
+#toggle1:checked ~ .menu1 {
+  height: 340px;
+}
+
+
+/* Menu */
+.menu1 {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: 1fr repeat(4, 0.1fr);
+  grid-column-gap: 5px;
+  padding: 0;
+  list-style: none;
+  clear: both;
+  width: auto;
+  text-align: center;
+  height: 0;
+  overflow: hidden;
+  transition: height .4s ease;
+  z-index: 120;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.menu1 a:first-child {
+  margin-left: 73%;
+}
+
+.link1 {
+height: 190px;
+  width: 190px;
+  margin: 0;
+  padding-left: 10px;
+}
+
+.link1:hover {
+  background-color: #fff;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+#l1{background-color: #b59bc7;}
+#l2{background-color: #FF0033;}
+#l3{background-color: #6666FF;}
+#l4{background-color: #66CC99;}
 /*----------------------index------------------------*/
 
 #index{padding-top:40px;}@media (min-width:768px){#index{padding-top:0;}}@media (min-width:768px){#index{margin-right:232px;}}
@@ -110,25 +225,113 @@
     margin: 0;
     padding: 0;
 }
-.left-panel{
+.panel-heading{
     background-color: #b59bc7;
     font-family: 'qaligo',sans-serif;
     height: 100vh;
     padding: 0 10px 0 2px;
     
 }
-.right-panel{
+.panel-body{
     background-color: #1F1F1F;
     color: white;
+    height: 100vh;
+    padding: 0 10px 0 2px;
+}
+
+.panel{
+    display:
 }
 
 #title{
     text-align: left;
-    padding-top: 55%;
-    padding-left: 10%;
+    padding-top: 45vh;
+    padding-left: 2.3vw;
     font-size: 3em;
     line-height:1.9em;
     white-space: normal;
+}
+
+#sub-title{
+    font-family: 'qaligo', sans-serif;
+    font-size: 2.5em;
+    color: #b59bc7;
+    text-align: left;
+    padding-top: 60vh;
+    padding-left: 2.3vw;
+    line-height:1.9em;
+    white-space: normal;
+}
+
+#line{
+  border-left: 6px solid #1F1F1F;
+  height: 45vh;
+    position: absolute;
+    left: 4vw;
+}
+
+#circle{
+    height: 6vh;
+    width: 6vh;
+    border-radius: 50%;
+    background-color: #1F1F1F;
+    margin-left: 10px;
+}
+
+#circle-group{
+    display: inline-flex;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    
+}
+
+#circle2{
+    height: 6vh;
+    width: 6vh;
+    border-radius: 50%;
+    background-color: #b59bc7;
+    margin-right: 10px;
+}
+
+#circle-group2{
+    display: inline-flex;
+    padding: 10px;
+    position: absolute;
+    right: 232px;
+    top: 0;
+    
+}
+
+.wrapper {
+    display: flex;
+}
+ 
+.stick {
+    height: 150px;
+    width: 8px;
+    background: #b59bc7;
+    position: absolute;
+    right: 499px;
+    bottom: 0;
+}
+
+#sub{
+    font-family: 'qaligo',sans-serif;
+    text-align: center;
+    justify-content: center;
+    padding: 12px 10px 10px;
+    
+}
+ 
+.flag {
+    width: 150px;
+    height: 50px;
+    top: 50px;
+    left: 293px;
+    background-color: #b59bc7;
+    position: relative;
 }
 /*----------------------works------------------------*/
 #worksection{
@@ -207,6 +410,144 @@
     background-position: center;
 }
 
+/*----------------------LIGHTBOX------------------------*/
+.row > .column {
+  padding: 0 8px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Create four equal columns that floats next to eachother */
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 40px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: black;
+    color: white;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+}
+
+#modalimage{
+    justify-content: center;
+    text-align: center;
+    background-color: black;
+}
+
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Hide the slides by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Caption text */
+
+.caption-container{
+    padding-top: 10px;
+    font-family: 'quicksand', sans-serif;
+    color: white;
+}
+.caption-container::after{
+position: absolute;
+  
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+/*----------------------LIGHTBOX END------------------------*/
 
 /*----------------------about/contact------------------------*/
 
