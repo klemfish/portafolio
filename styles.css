@@ -270,14 +270,16 @@ height: 250px;
 .left-half {
 background-color: #b59bc7;
   float: left;
-  width: 50%;
+  width: 55%;
     height: 100vh;
     font-family: 'qaligo',sans-serif;
+    
 }
+
 .right-half {
     background-color: #1F1F1F;
   float: left;
-  width: 50%;
+  width: 45%;
     height: 100vh;
 }
 
@@ -315,46 +317,24 @@ background-color: #b59bc7;
     
 }
 
-.wrapper {
-    display: block;
-    position: static;
-}
- 
-.stick {
-    height: 150px;
-    width: 8px;
-    background: #b59bc7;
-    position: absolute;
-    right: 499px;
-    bottom: 0;
+#title{
+    font-size: 3em;
+    line-height: 2em;
+    margin: 15px;
+    padding-left: 30px;
+    padding-top: 57.4vh;
+    color: #b59bc7;
+    font-family: 'qaligo';
 }
 
-#sub{
-    
-    position: relative;
-    font-family: 'qaligo',sans-serif;
-    text-align: center;
-    justify-content: center;
-    padding: 12px 10px 10px;
-    
-}
- 
-.flag {
-    width: 150px;
-    height: 50px;
-    top: 50px;
-    left: 293px;
-    background-color: #b59bc7;
-    position: relative;
-}
 
 svg text {
-  font-family: 'quicksand';
-  letter-spacing: 2px;
-  stroke: #b59bc7;
-  font-size: 100px;
+  font-family: 'Qaligo';
+  letter-spacing: 0px;
+  stroke: #6205a3;
+  font-size: 55px;
   font-weight: 700;
-  stroke-width: 3;
+  stroke-width: 1;
  
   animation: textAnimate 5s infinite alternate;
   
@@ -364,33 +344,60 @@ svg text {
   0% {
     stroke-dasharray: 0 50%;
     stroke-dashoffset:  20%;
-    fill:hsl(189, 68%, 75%)
+    fill:#6205a3
 
   }
   
   100% {
     stroke-dasharray: 50% 0;
     stroke-dashoffstet: -20%;
-    fill: hsla(189, 68%, 75%,0%)
+    fill: hsla(0, 0%, 100%, 0)
   }
   
 }
 
 @media(max-width: 769px){
+    svg text{
+        text-align: center;
+        stroke: #b59bc7;
+        font-size: 30px;
+    }
     
 }
 
 @media(max-width: 1024px){
-    .left-half {
-    width: 100vw;
-    height: 40vh;
-    overflow-x: hidden;
+    .right-half {
+    display: none;
 }
     
-.right-half {
+.left-half {
     width: 100vw;
-    height: 60vh;
+    height: 100vh;
     overflow-x: hidden;
+    background-color: #1F1F1F;
+}
+    svg text{
+        text-align: center;
+        stroke: #b59bc7;
+        font-size: 50px;
+        transform: translateX(-20%)
+    }
+    
+    
+    @keyframes textAnimate {
+  0% {
+    stroke-dasharray: 0 50%;
+    stroke-dashoffset:  20%;
+    fill:#b59bc7;
+
+  }
+  
+  100% {
+    stroke-dasharray: 50% 0;
+    stroke-dashoffstet: -20%;
+    fill: hsla(0, 0%, 100%, 0)
+  }
+  
 }
     
     
