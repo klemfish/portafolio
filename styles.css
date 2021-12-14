@@ -55,8 +55,7 @@ a {
 .hamburger1 {
   height: 45px;
     width: 100%;
-  margin: 10px;
-  display: -ms-grid;
+  display: grid;
   display: grid;
   grid-template-rows: repeat(3, 1fr);
   justify-items: right;
@@ -69,9 +68,9 @@ a {
   position: relative;
   width: 40px;
   height: 5px;
-  margin-top: 7px;
-    margin-right: 20px;
-  -webkit-transition: all 0.2s ease-in-out;
+  margin-top: 10px;
+    margin-right: 70px;
+  transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
 
@@ -80,33 +79,32 @@ a {
 }
 
 #toggle1:checked + .hamburger1 .top {
-  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
           transform: rotate(-45deg);
   margin-top: 22.5px;
 }
 
 #toggle1:checked + .hamburger1 .meat {
-  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
           transform: rotate(45deg);
   margin-top: -5px;
 }
 
 #toggle1:checked + .hamburger1 .bottom {
-  -webkit-transform: scale(0);
+  transform: scale(0);
           transform: scale(0);
 }
 
 #toggle1:checked ~ .menu1 {
-  height: 340px;
+  height: 10%;
 }
 
 
 /* Menu */
 .menu1 {
+    margin: 10px;
   width: 100%;
-  display: -ms-grid;
-  display: grid;
-  grid-template-columns: 1fr repeat(4, 0.1fr);
+  display: inline-flex;
   padding: 0;
   list-style: none;
   clear: both;
@@ -116,9 +114,10 @@ a {
   overflow: hidden;
   transition: height .4s ease;
   z-index: 120;
-  -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
   transition: all 0.3s ease;
     background-color: #1F1F1F;
+    
 }
 
 
@@ -126,8 +125,10 @@ a {
 .link1 {
 height: 250px;
   width: 250px;
-  margin: 10px;
+  margin: 0;
 }
+
+
 
 .link1:hover {
   background-color: #fff;
@@ -135,7 +136,8 @@ height: 250px;
   transition: all 0.3s ease;
 }
 
-#l0{font-family: 'qaligo', sans-serif; font-size: 1.5em; line-height: 2em; align-content: center; padding-top: 20%; background-color: #483469;}
+#l0{background-color: #483469;}
+#l0text{display: flex; font-family: 'qaligo', sans-serif; font-size: 1.5em; line-height: 2em; align-content: center; }
 #l1{background-color: #b59bc7; font-size: 30px;}
 #l2{background-color: #FF0033; font-size: 30px;}
 #l3{background-color: #6666FF; font-size: 30px;}
@@ -431,8 +433,8 @@ svg text {
 }
 
 .img-responsive{
-    height: 17em;
-    width: 17em;
+    height: 20em;
+    width: 20em;
     object-fit: cover;
     border-radius: 15px;
     display: block;
@@ -480,7 +482,17 @@ svg text {
     background-position: center;
 }
 
-@media (max-width: 768px){.btn-primary{margin-bottom: 20px; width: 300px;} .botones{align-content: center; margin-bottom: 30px; padding: 0;}.btn-secondary{margin-bottom: 20px;width: 300px;}}
+@media (max-width:1280px){
+    .img-responsive{width: 17em; height: 17em;}
+}
+@media (max-width: 1024px) and (min-width: 769px){
+    .img-responsive{width: 14em; height: 14em;}
+}
+
+@media (max-width: 768px){
+    .btn-primary{margin-bottom: 20px; width: 300px;} 
+    .botones{align-content: center; margin-bottom: 30px; padding: 0;}
+    .btn-secondary{margin-bottom: 20px;width: 300px;}}
 
 /*----------------------LIGHTBOX------------------------*/
 .row > .column {
@@ -624,33 +636,49 @@ img.hover-shadow {
 
 .ac{
     padding: 0;
-    width: 100vw;
     margin-top: 0;
     background-color: #1F1F1F;
-    height: 100vh;
     overflow-x: hidden;
 }
 
-#aboutimg{background-color: #6666FF; height: 80vh; padding-top: 30%;}
-#about{height: 45vh;}
+#about{background-color: #6666FF; height: 700px; width: 550px; padding-top: 40%; float: left;}
+#aboutimg{width: 100%;}
+#aboutinfo{font-family: 'Quicksand', sans-serif; float: right; color: white; text-align: left; margin-left: 10px; padding-top: 25%; font-size: 1.5em; height: 700px; width: 750px;}
+
+#contact{background-color: #66CC99; height: 700px; width: 550px; padding-top: 40%; bottom: 0; float: left;}
+#contactimg{filter: invert(); width: 100%; display: flex;}
+
+#contactinfo{float: right; margin-left: 10px; padding-top: 25%; height: 700px; width: 750px;}
 
 
-#contactimg{background-color: #66CC99; height: 80vh; padding-top: 30%;}
-#contact{filter: invert();height: 40vh;}
-#about{ padding: 50px;}
+#contact1{width: 30%; filter: invert(); margin: 20px;}
+#contact2{width: 25%; filter: invert(); margin: 20px;}
 
-#aboutinfo{color: white; text-align: left; padding-top: 20%; padding-left: 25px; padding-right: 25px; font-size: 1.5em; height: 80vh;}
+@media (max-width: 1280px){
+    #about{max-width: 600px; max-height: 600px;}
+    #aboutinfo{max-width: 500px; max-height: 600px;}
+    #contact{max-width: 600px; max-height: 600px;}
+    #contactinfo{max-width: 500px; max-height: 600px;}  
+}
 
-.contactinfo{text-align: left; padding-top: 20%; padding-left: 25px; padding-right: 25px; font-size: 1.5em; height: 80vh;}
+@media (max-width: 1024px) and (min-width:769px){
+    #about{max-width: 400px; max-height: 600px;}
+    #aboutinfo{max-width: 500px; max-height: 600px;}
+    #contact{max-width: 400px; max-height: 600px;}
+    #contactinfo{max-width: 500px; max-height: 600px;}
+}
 
-
-#contact1{height: 100px; padding-right: 100px; filter: invert();}
-#contact2{height: 150px; filter: invert();}
-
-@media (max-width: 768px){#about{height: 60vh;}#aboutimg{padding: 0; height: 60vh; width: 100vw;}
-#contactimg{height: 60vh; padding-top: 40px;} #contact{ height: 50vh;}
-    #contact1{padding-top: 10%;}
-    #contact2{padding-top: 10%;}
+@media (max-width: 768px){
+    #aboutimg{width: 100%;}
+    #about{height: 500px; width: 100%; display:flex; padding: 0; float: none;}
+    #aboutinfo{width: 100%;float: none; margin-left: 0;}
+    
+    #contact{height: 500px; width: 100%; display:flex; padding: 0;float: none;} 
+    #contactimg{ width: 100%;}
+    #contactinfo{width: 100%; height: 700px;float: none; margin-left: 0;}
+    
+    #contact1{width: 50%; margin: 10px; padding-bottom: 50px;}
+    #contact2{width: 50%; margin: 10px; padding-bottom: 50px;}
 }
 /*----------------------website------------------------*/
 #website{
@@ -661,10 +689,7 @@ img.hover-shadow {
 
 #websiteheader{
     background-color: #1F1F1F;
-    padding-left: 0;
-    padding-right: 0;
-    margin-bottom: 50px;
-     font-family: 'qaligo', sans-serif;
+    font-family: 'qaligo', sans-serif;
     font-size: 4vh;
     text-align: center;
     
