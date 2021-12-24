@@ -7,62 +7,34 @@
         <link rel="stylesheet" href="styles.css">
         <title>Portafolio</title>
         <link href="http://fonts.cdnfonts.com/css/qaligo" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
         <link rel="preconnect" href="https://fonts.googleapis.com">
     </head>
     
     <body id="index">
-        <nav class="navbar navbar-expand-md fixed-right">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
-            aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-                <section class="p-menu1">
-                    <nav id="navbar" class="navigation" role="navigation">
-                        <input id="toggle1" type="checkbox" />
-                        <label class="hamburger1" for="toggle1">
-                            <div class="top"></div>
-                            <div class="meat"></div>
-                            <div class="bottom"></div>
-                        </label>
-                        
-                        <nav class="menu1">
-                            <a class="link1" href="works.html" id="l2"><img src="images/works.svg" height="200px" id="imgmenu">WORKS</a>
-                            <a class="link1" href="about-cont.html" id="l3"><img src="images/about.svg" height="200px" id="imgmenu">ABOUT</a>
-                            <a class="link1" href="about-cont.html#contactme" id="l4"><img src="images/contact.svg" height="200px" id="imgmenu">CONTACT</a>
-                        </nav>
-                    </nav>
-                </section>
-            </button>
-
-            
-            
-            <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-                <ul class="navbar-nav">
-                    <li class="nav-item" id="nav1">
-                        <a class="nav-link" href="works.html"><img src="images/works.svg" id="indexim" >WORKS
-                        </a>
-                    </li>
-                    <li class="nav-item" id="nav2">
-                        <a class="nav-link" href="about-cont.html"><img src="images/about.svg" id="indexim">ABOUT
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="about-cont.html#contactme" id="nav3"><img src="images/contact.svg" id="indexim" >CONTACT
-                        </a>
-                    </li>
-                </ul>
+        <main>   
+        <nav>
+        <div class="navbar">
+            <a class="active" href="#"></a>
+            <a class="nav-item" href="works.html" id="l2"><img src="images/works.svg" height="80%" id="indexim">WORKS</a>
+            <a class="nav-item" href="about-cont.html" id="l3"><img src="images/about.svg" height="80%" id="indexim">ABOUT</a>
+            <a class="nav-item" href="about-cont.html#contactme" id="l4"><img src="images/contact.svg" height="80%;" id="indexim">CONTACT</a>
             </div>
         </nav>
-    
-    <main>
+        
         <div class="container-left">
             <div class="left-half">
-                <svg width="100%" height="100%" viewBox="0 0 500 500">
-                    <text x="50%" y="50%"  text-anchor="middle">
+                
+                <div id="svgtitle">
+                <svg width="90%" height="100%" viewBox="0 0 500 500">
+                    <text x="55%" y="80%"  text-anchor="middle">
                     Klemens
                     </text>
-                    <text x="38%" y="72%"  text-anchor="middle">
+                    <text x="43%" y="99%"  text-anchor="middle">
                     Fisher
                     </text>
                 </svg>
+                    </div>
                 
                 <div id="circle-group">
                     <div id=circle></div>
@@ -72,16 +44,25 @@
             </div>
         </div>
         
+    
             <div class="container-right">
                 <div class="right-half">
-                    <div class="container title">
-                        Design
-                        </div>
-                        <div id="circle-group2">
+                    <div id="circle-group2">
                             <div id=circle2></div>
                             <div id=circle2></div>
                             <div id=circle2></div>
-                        </div>
+                    </div>
+                    <div id="portfolio-title">
+                        <svg width="80%" height="100%" viewBox="0 0 500 500">
+                            <text x="40%" y="93.5%"  text-anchor="middle">
+                                Design
+                            </text>
+                        </svg>
+                    </div>
+                    <div id="portfoliosub">
+                        <h2 id="sub">portfolio</h2>
+                    </div>
+                    <div class="vertical2"></div>
                 </div>
             </div>
     </main>
