@@ -197,70 +197,38 @@ height: 250px;
 
 /*----------------------index------------------------*/
 
-#index{padding-top:40px;}@media (min-width:769px){#index{padding-top:0;}}@media (min-width:769px){#index{margin-right:232px;}}
+.navbar{
+    top: 0;
+    right: 0;
+    width:20%; 
+    height: 100%;
+    position: absolute;
+}
+
+.nav-items{
+    display: block;
+    padding: 2px;
+    top: 0;
+    right: 0;
+    text-decoration: none;
+    
+}
+
+.nav-item{
+    display: block;
+    height: 33.33%;
+    width: 100%;
+    padding-top: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: center;
+}
 
 #indexim{
-    height: 24vh;
-}
-#nav1{
-    background-color: #FF0033;
-}
-#nav2{
-    background-color: #6666FF;
-}
-#nav3{
-    background-color: #66CC99;
-}
-
-@media (min-width: 769px) {
- #index {
-    margin-right: 232px;
-  }
-}
-
-.navbar.fixed-right {
-    background-color: transparent;
-  position: fixed;
-    padding: 0;
-  top: 0;
- right: 0;
-  z-index: 1030;
-    text-align: center;
-    font-size: 5vh;
-    overflow-y: hidden;
-}
-
-@media (min-width: 769px) {
-  .navbar.fixed-right {
-    bottom: 0;
-    width: 232px;
-  }
-    
-  .navbar.fixed-right .navbar-collapse {
-    flex-grow: 0;
-    flex-direction: column;
     width: 100%;
-  }
-  .navbar.fixed-right .navbar-collapse .navbar-nav {
-    flex-direction: column;
-    width: 100%;
-  }
-  .navbar.fixed-right .navbar-collapse .navbar-nav .nav-item {
-    width: 100%;
-  }
-  .navbar.fixed-right .navbar-collapse .navbar-nav .nav-item {
-    top: 0;
-  }
 }
 
-@media (min-width: 1025px) {
-    .navbar{
-        width: 100%;
-    }}
-    
 @media (max-width: 769px) {
-    #c1{height: 20px;} #c2{height: 50vh;} 
-
 }
 
 .index{
@@ -269,20 +237,37 @@ height: 250px;
     background-color: #b59bc7;
 }
 
+.container-left{
+    position: absolute;
+    width: 42%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    margin: 0;
+    display: inline-block;
+}
+
+.container-right{
+    position: absolute;
+    width: 38%;
+    height: 100vh;
+    top: 0;
+    margin: 0;
+    right: 20%;
+    display: inline-block;
+}
 .left-half {
 background-color: #b59bc7;
-  float: left;
-  width: 55%;
-    height: 100vh;
+  width: 100%;
+    height: 100%;
     font-family: 'qaligo',sans-serif;
     
 }
 
 .right-half {
     background-color: #1F1F1F;
-  float: left;
-  width: 45%;
-    height: 100vh;
+  width: 100%;
+    height: 100%;
 }
 
 #circle{
@@ -314,21 +299,59 @@ background-color: #b59bc7;
     display: inline-flex;
     padding: 10px;
     position: absolute;
-    right: 232px;
     top: 0;
-    
+    right: 0;
+       
 }
 
-.title{
+#title{
     font-size: 3em;
     line-height: 2em;
-    margin: 15px;
     padding-left: 30px;
-    padding-top: 57.4vh;
     color: #b59bc7;
     font-family: 'qaligo';
+    bottom: 0;
 }
 
+#portfolio-title{
+    position: absolute;
+    bottom: 32%;
+    width: 100%;
+}
+
+#sub{
+    font-family: 'qaligo';
+    font-size: 23px;
+    text-align: center;
+    padding-top: 5px;
+}
+
+
+
+.vertical2{
+    border-left: 5px solid #b59bc7;
+    height: 18%;
+    bottom: 0;
+    margin-left: 69.2%;
+    position: absolute;
+}
+
+
+#portfoliosub{
+    bottom: 18%;
+    position: absolute;
+    color: #1F1F1F;
+    right: 30%;
+    background-color: #b59bc7;
+    padding: 10px;
+    height: 60px;
+}
+
+#svgtitle{
+    bottom: 35%;
+    position: absolute;
+    width: 100%;
+}
 
 svg text {
   font-family: 'Qaligo';
@@ -386,21 +409,6 @@ svg text {
     }
     
     
-    @keyframes textAnimate {
-  0% {
-    stroke-dasharray: 0 50%;
-    stroke-dashoffset:  20%;
-    fill:#b59bc7;
-
-  }
-  
-  100% {
-    stroke-dasharray: 50% 0;
-    stroke-dashoffstet: -20%;
-    fill: hsla(0, 0%, 100%, 0)
-  }
-  
-}
     
     
 }
